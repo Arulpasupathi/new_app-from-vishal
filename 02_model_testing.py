@@ -13,6 +13,12 @@ from sklearn.svm import SVR
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 import warnings
 warnings.filterwarnings('ignore')
+from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
+from sklearn.linear_model import LinearRegression, Ridge, Lasso
+from sklearn.svm import SVR
+from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
+import warnings
+warnings.filterwarnings('ignore')
 
 # Set random seed for reproducibility
 np.random.seed(42)
