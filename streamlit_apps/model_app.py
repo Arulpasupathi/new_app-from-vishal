@@ -2,6 +2,7 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
+import os
 
 # Set page configuration
 st.set_page_config(
@@ -37,7 +38,12 @@ st.markdown("""
 # Load the model
 @st.cache_resource
 def load_model():
-    with open(r"models\xgb_car_price_model.pkl", "rb") as f:
+    # Get the directory of the current script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    # Go up one level to access the models directory
+    model_path = os.path.join(os.path.dirname(script_dir), "models", "xgb_car_price_model.pkl")
+    
+    with open(model_path, "rb") as f:
         model = pickle.load(f)
     return model
 
