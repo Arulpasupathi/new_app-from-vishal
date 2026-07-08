@@ -28,5 +28,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run model tests
+
         run: |
-          python -m pytest -v
+          python -m pytest -v --cache-clear
+
