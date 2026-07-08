@@ -15,7 +15,7 @@ CATEGORICAL_FEATURES = ["Petrol", "Diesel", "Electric"]
 ALPHA = 0.05
 
 TODAY = datetime.datetime.now().strftime("%d%m%y")  # ddmmyy
-NEW_DATA_PATH = ROOT / "model_tracking" / f"{TODAY}_cars_24_price.csv"
+NEW_DATA_PATH = ROOT / "data" / "cars24-car-price-cleaned-new.csv"
 
 
 @pytest.fixture(scope="module")
