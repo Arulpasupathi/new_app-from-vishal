@@ -8,7 +8,7 @@ from scipy.stats import ks_2samp, chi2_contingency
 
 ROOT = Path(__file__).resolve().parents[1]
 
-REFERENCE_PATH = ROOT / "model_tracking" / "cars24-car-price-cleaned-new.csv"
+REFERENCE_PATH = ROOT / "data" / "cars24-car-price-cleaned-new.csv"
 MODELS_DIR = ROOT / "models"
 NUMERIC_FEATURES = ["km_driven", "mileage", "age", "selling_price"]
 CATEGORICAL_FEATURES = ["Petrol", "Diesel", "Electric"]
